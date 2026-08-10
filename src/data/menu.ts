@@ -1,0 +1,206 @@
+export interface MenuItem {
+  id: string;
+  category: 'Starters' | 'Facial' | 'Extras';
+  name: string;
+  description: string;
+  price: number;
+  duration: string;
+  image: string;
+}
+
+export const menuItems: MenuItem[] = [
+  // Starters
+  {
+    id: 's1',
+    category: 'Starters',
+    name: 'Deep tissue',
+    description: 'Is a great way to release mental and physical stress stimulation those muscles and tissue to provide relief',
+    price: 40,
+    duration: '60min',
+    image: '/assets/img/one.jpg',
+  },
+  {
+    id: 's2',
+    category: 'Starters',
+    name: 'Hot stone massage',
+    description: 'Warm stone helps relieve muscle tension and pain reduces stress promotes sleep',
+    price: 55,
+    duration: '75 min',
+    image: '/assets/img/one.jpg',
+  },
+  {
+    id: 's3',
+    category: 'Starters',
+    name: 'Relaxing safari massage',
+    description: 'Brings a sense of contentment and calmness as a result you will be able to handle stress easily and sleep better at night',
+    price: 30,
+    duration: '60min',
+    image: '/assets/img/one.jpg',
+  },
+  {
+    id: 's4',
+    category: 'Starters',
+    name: 'Ayurvedic massage',
+    description: 'Warm oil massage',
+    price: 30,
+    duration: '60 min',
+    image: '/assets/img/one.jpg',
+  },
+  {
+    id: 's5',
+    category: 'Starters',
+    name: 'Back neck & shoulder massage',
+    description: 'Massage technique to relax the body and reduce tension of the back neck and shoulders classic',
+    price: 20,
+    duration: '30min',
+    image: '/assets/img/body.jpeg',
+  },
+  {
+    id: 's6',
+    category: 'Starters',
+    name: 'Indian head',
+    description: 'Reduce stress promotes hair growth and improves mental and physical health',
+    price: 20,
+    duration: '30 min',
+    image: '/assets/img/one.jpg',
+  },
+  {
+    id: 's7',
+    category: 'Starters',
+    name: 'Walking foot massage',
+    description: 'Help relieve the pressure in the thus improving the blood circulation and making the muscles flexible',
+    price: 20,
+    duration: '30min',
+    image: '/assets/img/one.jpg',
+  },
+
+  // Facial
+  {
+    id: 'f1',
+    category: 'Facial',
+    name: 'Indian head massage',
+    description: 'Reduce stress promotes hair growth and improves mental and physical health',
+    price: 20,
+    duration: '30 min',
+    image: '/assets/img/one.jpg',
+  },
+  {
+    id: 'f2',
+    category: 'Facial',
+    name: 'Facial cleansing facial',
+    description: 'Help to renew skin cell by circulation the slow under the skin',
+    price: 20,
+    duration: '30 min',
+    image: '/assets/img/one.jpg', // Added a default price/duration as it was missing
+  },
+  {
+    id: 'f3',
+    category: 'Facial',
+    name: 'Deep cleaning facial',
+    description: 'A facial done by a trained professional can help keep your skin healthy even if you do not have any skin issues distress you and help you relax',
+    price: 30,
+    duration: '55 min',
+    image: '/assets/img/facial.jpeg',
+  },
+  {
+    id: 'f4',
+    category: 'Facial',
+    name: 'Africa Goddess Facial',
+    description: 'Start with a back neck & shoulders massage then relaxing facial',
+    price: 45,
+    duration: '70min',
+    image: '/assets/img/facial.jpeg',
+  },
+  {
+    id: 'f5',
+    category: 'Facial',
+    name: 'Anti-Aging facial',
+    description: 'Reducing the appearance of line and wrinkles getting these facial regularly can help to keep your skin looking smooth fresh and young',
+    price: 30,
+    duration: '55 min',
+    image: '/assets/img/one.jpg',
+  },
+  {
+    id: 'f6',
+    category: 'Facial',
+    name: 'Express facial',
+    description: 'The express does not include cleaning exfoliation and moisturising give your skin smooth & nourishing',
+    price: 15,
+    duration: '25 min',
+    image: '/assets/img/facial.jpeg',
+  },
+
+  // Extras
+  {
+    id: 'e1',
+    category: 'Extras',
+    name: 'Body scrubs',
+    description: 'Remove the dead skin cell from the top layer of your skin they also clean off the dirt from your skin pores (Coconut cream, Zanzibar spices, Coffee, Sugar)',
+    price: 20,
+    duration: '30min',
+    image: '/assets/img/one.jpg',
+  },
+  {
+    id: 'e2',
+    category: 'Extras',
+    name: 'Body wrap',
+    description: 'Is good for all skin help with reducing weight and give your skin smooth nourishing & soft (Coconut cream, Chocolate, Sea weed)',
+    price: 25,
+    duration: '30 min',
+    image: '/assets/img/one.jpg',
+  },
+  {
+    id: 'e3',
+    category: 'Extras',
+    name: 'Express pedicure',
+    description: 'Express pedicure treatment',
+    price: 15,
+    duration: '30 min',
+    image: '/assets/img/nail.jpeg',
+  },
+  {
+    id: 'e4',
+    category: 'Extras',
+    name: 'Express manicure',
+    description: 'Express manicure treatment',
+    price: 10,
+    duration: '30 min',
+    image: '/assets/img/nail.jpeg',
+  },
+  {
+    id: 'e5',
+    category: 'Extras',
+    name: 'Full pedicure',
+    description: 'Full pedicure treatment',
+    price: 25,
+    duration: '60 min',
+    image: '/assets/img/nail.jpeg',
+  },
+  {
+    id: 'e6',
+    category: 'Extras',
+    name: 'Full manicure',
+    description: 'Full manicure treatment',
+    price: 20,
+    duration: '60 min',
+    image: '/assets/img/nail.jpeg',
+  },
+  {
+    id: 'e7',
+    category: 'Extras',
+    name: 'Wash and blow dry',
+    description: 'Hair treatment - Wash and blow dry',
+    price: 15,
+    duration: '45 min',
+    image: '/assets/img/one.jpg',
+  },
+  {
+    id: 'e8',
+    category: 'Extras',
+    name: 'Braids extension',
+    description: 'Hair treatment - Braids extension',
+    price: 30,
+    duration: '120 min',
+    image: '/assets/img/one.jpg',
+  }
+];
