@@ -176,6 +176,70 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section id="reviews" className="py-24 px-6 md:px-12 bg-[#FDFBF7]">
+        <div className="container mx-auto max-w-6xl">
+          <div className="text-center mb-16">
+            <h2 className="text-spa-accent uppercase tracking-[0.2em] text-sm font-bold mb-4">Guest Experiences</h2>
+            <h3 className="font-amatic font-bold uppercase tracking-widest text-5xl md:text-6xl text-spa-dark mb-6">Stories of Serenity</h3>
+            <p className="text-spa-dark/80 font-medium max-w-2xl mx-auto">Discover what our guests are saying about their restorative journeys at Beauty Spa Jambiani.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {/* Review 1 */}
+            <div className="bg-white p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-spa-dark/5 hover:-translate-y-1 transition-all">
+              <div className="flex gap-1 text-spa-accent mb-6">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="material-symbols-outlined text-[18px]">star</span>
+                ))}
+              </div>
+              <p className="text-spa-dark/70 font-light leading-relaxed mb-8 italic">&quot;Absolutely incredible experience. The hot stone massage was exactly what I needed after a long week of travel. The therapists are true professionals.&quot;</p>
+              <div className="flex items-center gap-4 mt-auto">
+                <div className="w-12 h-12 rounded-full bg-spa-dark/5 flex items-center justify-center text-spa-dark font-amatic text-2xl font-bold">SJ</div>
+                <div>
+                  <h4 className="font-bold text-spa-dark text-sm uppercase tracking-wider">Sarah Jenkins</h4>
+                  <p className="text-xs text-spa-dark/50 uppercase tracking-widest">London, UK</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Review 2 */}
+            <div className="bg-white p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-spa-dark/5 hover:-translate-y-1 transition-all md:-translate-y-4">
+              <div className="flex gap-1 text-spa-accent mb-6">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="material-symbols-outlined text-[18px]">star</span>
+                ))}
+              </div>
+              <p className="text-spa-dark/70 font-light leading-relaxed mb-8 italic">&quot;The best spa in Jambiani! My partner and I booked the private wellness suite. The organic products smelled heavenly and left our skin glowing.&quot;</p>
+              <div className="flex items-center gap-4 mt-auto">
+                <div className="w-12 h-12 rounded-full bg-spa-dark/5 flex items-center justify-center text-spa-dark font-amatic text-2xl font-bold">MB</div>
+                <div>
+                  <h4 className="font-bold text-spa-dark text-sm uppercase tracking-wider">Marco Bianchi</h4>
+                  <p className="text-xs text-spa-dark/50 uppercase tracking-widest">Milan, Italy</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Review 3 */}
+            <div className="bg-white p-8 rounded-[2rem] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-spa-dark/5 hover:-translate-y-1 transition-all">
+              <div className="flex gap-1 text-spa-accent mb-6">
+                {[...Array(5)].map((_, i) => (
+                  <span key={i} className="material-symbols-outlined text-[18px]">star</span>
+                ))}
+              </div>
+              <p className="text-spa-dark/70 font-light leading-relaxed mb-8 italic">&quot;A true hidden gem. I highly recommend the traditional African full body massage. Instant booking via WhatsApp was also super convenient.&quot;</p>
+              <div className="flex items-center gap-4 mt-auto">
+                <div className="w-12 h-12 rounded-full bg-spa-dark/5 flex items-center justify-center text-spa-dark font-amatic text-2xl font-bold">AK</div>
+                <div>
+                  <h4 className="font-bold text-spa-dark text-sm uppercase tracking-wider">Aisha Khan</h4>
+                  <p className="text-xs text-spa-dark/50 uppercase tracking-widest">Dubai, UAE</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Gallery Section */}
       <section id="gallery" className="py-32 bg-spa-light overflow-hidden">
         <div className="container mx-auto px-6 md:px-12 mb-16">
