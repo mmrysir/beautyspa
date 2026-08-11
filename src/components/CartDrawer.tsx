@@ -88,9 +88,9 @@ export default function CartDrawer({ isOpen, onClose }: CartDrawerProps) {
               <div className="space-y-4">
                 {cart.map((item) => (
                   <div key={item.id} className="flex gap-4 p-4 bg-white rounded-3xl border border-spa-dark/5 shadow-sm">
-                    <div className="w-24 h-24 rounded-2xl overflow-hidden flex-shrink-0 bg-spa-light relative group">
-                      <img src={item.image || '/assets/img/hero-img.jpeg'} alt={item.name} className="w-full h-full object-cover" />
-                      <div className="absolute inset-0 bg-spa-dark/0 group-hover:bg-spa-dark/10 transition-colors" />
+                    <div className="w-24 h-24 rounded-2xl flex-shrink-0 bg-spa-accent/10 border border-spa-accent/20 flex items-center justify-center text-spa-accent relative group overflow-hidden">
+                      <span className="material-symbols-outlined text-[40px]">{item.icon || 'spa'}</span>
+                      <div className="absolute inset-0 bg-spa-dark/0 group-hover:bg-spa-dark/5 transition-colors" />
                     </div>
                     <div className="flex-1 flex flex-col justify-between py-1">
                       <div className="flex justify-between items-start">

@@ -5,7 +5,7 @@ export interface MenuItem {
   description: string;
   price: number;
   duration: string;
-  image: string;
+  icon: string;
 }
 
 export const menuItems: MenuItem[] = [
@@ -17,7 +17,7 @@ export const menuItems: MenuItem[] = [
     description: 'Is a great way to release mental and physical stress stimulation those muscles and tissue to provide relief',
     price: 40,
     duration: '60min',
-    image: '/assets/img/one.jpg',
+    icon: 'healing',
   },
   {
     id: 's2',
@@ -26,7 +26,7 @@ export const menuItems: MenuItem[] = [
     description: 'Warm stone helps relieve muscle tension and pain reduces stress promotes sleep',
     price: 55,
     duration: '75 min',
-    image: '/assets/img/one.jpg',
+    icon: 'spa',
   },
   {
     id: 's3',
@@ -35,7 +35,7 @@ export const menuItems: MenuItem[] = [
     description: 'Brings a sense of contentment and calmness as a result you will be able to handle stress easily and sleep better at night',
     price: 30,
     duration: '60min',
-    image: '/assets/img/one.jpg',
+    icon: 'self_improvement',
   },
   {
     id: 's4',
@@ -44,7 +44,7 @@ export const menuItems: MenuItem[] = [
     description: 'Warm oil massage',
     price: 30,
     duration: '60 min',
-    image: '/assets/img/one.jpg',
+    icon: 'water_drop',
   },
   {
     id: 's5',
@@ -53,7 +53,7 @@ export const menuItems: MenuItem[] = [
     description: 'Massage technique to relax the body and reduce tension of the back neck and shoulders classic',
     price: 20,
     duration: '30min',
-    image: '/assets/img/body.jpeg',
+    icon: 'accessibility_new',
   },
   {
     id: 's6',
@@ -62,7 +62,7 @@ export const menuItems: MenuItem[] = [
     description: 'Reduce stress promotes hair growth and improves mental and physical health',
     price: 20,
     duration: '30 min',
-    image: '/assets/img/one.jpg',
+    icon: 'face',
   },
   {
     id: 's7',
@@ -71,7 +71,7 @@ export const menuItems: MenuItem[] = [
     description: 'Help relieve the pressure in the thus improving the blood circulation and making the muscles flexible',
     price: 20,
     duration: '30min',
-    image: '/assets/img/one.jpg',
+    icon: 'directions_walk',
   },
 
   // Facial
@@ -82,7 +82,7 @@ export const menuItems: MenuItem[] = [
     description: 'Reduce stress promotes hair growth and improves mental and physical health',
     price: 20,
     duration: '30 min',
-    image: '/assets/img/one.jpg',
+    icon: 'face',
   },
   {
     id: 'f2',
@@ -91,7 +91,7 @@ export const menuItems: MenuItem[] = [
     description: 'Help to renew skin cell by circulation the slow under the skin',
     price: 20,
     duration: '30 min',
-    image: '/assets/img/one.jpg', // Added a default price/duration as it was missing
+    icon: 'clean_hands',
   },
   {
     id: 'f3',
@@ -100,7 +100,7 @@ export const menuItems: MenuItem[] = [
     description: 'A facial done by a trained professional can help keep your skin healthy even if you do not have any skin issues distress you and help you relax',
     price: 30,
     duration: '55 min',
-    image: '/assets/img/facial.jpeg',
+    icon: 'face_retouching_natural',
   },
   {
     id: 'f4',
@@ -109,7 +109,7 @@ export const menuItems: MenuItem[] = [
     description: 'Start with a back neck & shoulders massage then relaxing facial',
     price: 45,
     duration: '70min',
-    image: '/assets/img/facial.jpeg',
+    icon: 'auto_awesome',
   },
   {
     id: 'f5',
@@ -118,7 +118,7 @@ export const menuItems: MenuItem[] = [
     description: 'Reducing the appearance of line and wrinkles getting these facial regularly can help to keep your skin looking smooth fresh and young',
     price: 30,
     duration: '55 min',
-    image: '/assets/img/one.jpg',
+    icon: 'spa',
   },
   {
     id: 'f6',
@@ -127,7 +127,7 @@ export const menuItems: MenuItem[] = [
     description: 'The express does not include cleaning exfoliation and moisturising give your skin smooth & nourishing',
     price: 15,
     duration: '25 min',
-    image: '/assets/img/facial.jpeg',
+    icon: 'timer',
   },
 
   // Extras
@@ -138,7 +138,7 @@ export const menuItems: MenuItem[] = [
     description: 'Remove the dead skin cell from the top layer of your skin they also clean off the dirt from your skin pores (Coconut cream, Zanzibar spices, Coffee, Sugar)',
     price: 20,
     duration: '30min',
-    image: '/assets/img/one.jpg',
+    icon: 'wash',
   },
   {
     id: 'e2',
@@ -147,7 +147,7 @@ export const menuItems: MenuItem[] = [
     description: 'Is good for all skin help with reducing weight and give your skin smooth nourishing & soft (Coconut cream, Chocolate, Sea weed)',
     price: 25,
     duration: '30 min',
-    image: '/assets/img/one.jpg',
+    icon: 'eco',
   },
   {
     id: 'e3',
@@ -156,7 +156,7 @@ export const menuItems: MenuItem[] = [
     description: 'Express pedicure treatment',
     price: 15,
     duration: '30 min',
-    image: '/assets/img/nail.jpeg',
+    icon: 'spa',
   },
   {
     id: 'e4',
@@ -165,7 +165,7 @@ export const menuItems: MenuItem[] = [
     description: 'Express manicure treatment',
     price: 10,
     duration: '30 min',
-    image: '/assets/img/nail.jpeg',
+    icon: 'pan_tool',
   },
   {
     id: 'e5',
@@ -174,7 +174,7 @@ export const menuItems: MenuItem[] = [
     description: 'Full pedicure treatment',
     price: 25,
     duration: '60 min',
-    image: '/assets/img/nail.jpeg',
+    icon: 'spa',
   },
   {
     id: 'e6',
@@ -183,7 +183,7 @@ export const menuItems: MenuItem[] = [
     description: 'Full manicure treatment',
     price: 20,
     duration: '60 min',
-    image: '/assets/img/nail.jpeg',
+    icon: 'pan_tool',
   },
   {
     id: 'e7',
@@ -192,7 +192,7 @@ export const menuItems: MenuItem[] = [
     description: 'Hair treatment - Wash and blow dry',
     price: 15,
     duration: '45 min',
-    image: '/assets/img/one.jpg',
+    icon: 'air',
   },
   {
     id: 'e8',
@@ -201,6 +201,6 @@ export const menuItems: MenuItem[] = [
     description: 'Hair treatment - Braids extension',
     price: 30,
     duration: '120 min',
-    image: '/assets/img/one.jpg',
+    icon: 'face_2',
   }
 ];

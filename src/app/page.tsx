@@ -152,21 +152,24 @@ export default function Home() {
             <p className="text-spa-dark/80 font-medium">Select from our range of deeply relaxing and rejuvenating treatments designed to restore your natural balance.</p>
           </div>
 
-          {/* Filter Navigation */}
-          <div className="sticky top-20 z-40 bg-white/95 backdrop-blur-md py-4 -mx-6 px-6 md:-mx-12 md:px-12 flex flex-wrap justify-center gap-3 mb-12 shadow-sm border-b border-spa-dark/5">
-            {categories.map((cat) => (
-              <button
-                key={cat.id}
-                onClick={() => setActiveCategory(cat.id)}
-                className={`px-6 py-2 md:px-8 md:py-3 rounded-full font-bold uppercase tracking-widest text-xs md:text-sm transition-all duration-300 ${
-                  activeCategory === cat.id
-                    ? 'bg-spa-dark text-white shadow-md scale-105'
-                    : 'bg-white text-spa-dark border border-spa-dark/10 hover:border-spa-accent hover:text-spa-accent'
-                }`}
+          {/* Filter Navigation - Select Dropdown */}
+          <div className="sticky top-32 z-40 bg-white/95 backdrop-blur-md py-4 -mx-6 px-6 md:-mx-12 md:px-12 flex justify-center mb-12 shadow-sm border-b border-spa-dark/5">
+            <div className="relative w-full max-w-sm">
+              <select
+                value={activeCategory}
+                onChange={(e) => setActiveCategory(e.target.value)}
+                className="w-full appearance-none bg-white border-2 border-spa-dark/10 text-spa-dark font-bold uppercase tracking-widest text-sm rounded-2xl px-6 py-4 pr-12 focus:outline-none focus:border-spa-accent transition-colors shadow-sm cursor-pointer"
               >
-                {cat.label}
-              </button>
-            ))}
+                {categories.map((cat) => (
+                  <option key={cat.id} value={cat.id}>
+                    {cat.label}
+                  </option>
+                ))}
+              </select>
+              <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-spa-dark/50">
+                <span className="material-symbols-outlined block">expand_more</span>
+              </div>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 md:gap-8 transition-all duration-500">
